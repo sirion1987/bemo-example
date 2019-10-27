@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "webpack --mode development --watch -d --progress --color",
-    "webfonts": "bemo-webfonts -s source/fonts/svg -f source/fonts -S source/stylesheets/variables/_icon-glyphs.scss"
+    "webfonts": "bemo-webfonts -s source/fonts/svg -f source/fonts -S source/stylesheets/variables/_icon-glyphs.scss",
+    "lint:sass": "stylelint --syntax sass source/stylesheets/blocks/_hero.sass"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
