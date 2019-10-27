@@ -1,0 +1,23 @@
+{
+  "plugins" : [
+    "stylelint-order"
+  ],
+  "extends" : [
+    "stylelint-config-recommended"
+  ],
+  "rules": {
+    "declaration-colon-space-after": "always-single-line",
+    "order/order": [
+      [
+        "custom-properties",
+        {
+          "type": "rule",
+          "selector": "^\\+[\\w-]+"
+        },
+        "less-mixins",
+        "declarations"
+      ]
+    ],
+    "order/properties-alphabetical-order": true
+  }
+}
